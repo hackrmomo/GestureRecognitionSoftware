@@ -9,7 +9,7 @@ This program is a Gesture recognition software that aims to work as an accessibi
 
 -Working on hand skeletal feature recognition class.
 
-<h2>LEGAL:</h2>
+<h2>Legal</h2>
 A new software made by a high school AP student.
 
 <h3>Webcam API License</h3>
