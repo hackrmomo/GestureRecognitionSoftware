@@ -6,6 +6,7 @@ This program is a Gesture recognition software that aims to work as an accessibi
 
 <h2>Current status</h2>
 -Camera detection working.
+
 -Working on hand skeletal feature recognition class.
 
 <h2>LEGAL:</h2>
