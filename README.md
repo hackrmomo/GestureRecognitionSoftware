@@ -1,9 +1,17 @@
 GestureRecognitionSoftware
 ==========================
+<h2>About</h2>
 
+This program is a Gesture recognition software that aims to work as an accessibility feature for people who are partially busy when needing to access thier computational devices. The software is like the Kinect (c) Microsoft for the native Computer HD camera (720p+).
+
+<h2>Current status</h2>
+-Camera detection working.
+-Working on hand skeletal feature recognition class.
+
+<h2>LEGAL:</h2>
 A new software made by a high school AP student.
-////
-License.txt:
+
+<h3>Webcam API License</h3>
 
 Copyright (c) 2004-2013 QOS.ch
 All rights reserved.
@@ -29,11 +37,9 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
--sarxos
+<h4>-sarxos</h4>
 
-////
-
-Usage of Program:
+<h3>Lisence of Final Program:</h3>
 
 Copyright (c) 2014-2015
 All rights reserved.
@@ -59,4 +65,4 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 Creative Common Attributes Attached
 
--momo
+<h4>-momo</h4>
