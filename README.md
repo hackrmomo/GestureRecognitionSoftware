@@ -40,7 +40,7 @@ WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 <h4>-sarxos</h4>
 
-<h3>Lisence of Final Program:</h3>
+<h3>License of Final Program:</h3>
 
 Copyright (c) 2014-2015
 All rights reserved.
