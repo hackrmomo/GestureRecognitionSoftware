@@ -17,18 +17,18 @@ public class GRS {
         wc.open();
         wc.getImage();
         while (true) {
-            if (commandIntake.nextLine().equals("help".toLowerCase())) {
-                sf = new SettingsFrame();
-                sf.setVisible(true);
-                //wc.close();
-            } else if (commandIntake.nextLine().equals("debug".toLowerCase())) {
-                wc.close();
-                wc.setViewSize(WebcamResolution.VGA.getSize());
-                wc.open();
-                DebugFrame window = new DebugFrame();
+            if (commandIntake.hasNextLine()) {
+                String commandReceived = commandIntake.nextLine();
+                if (commandReceived.equals("settings".toLowerCase())) {
+                    sf = new SettingsFrame();
+                    sf.setVisible(true);
+                } else if (commandReceived.equals("debug".toLowerCase())) {
+                    wc.close();
+                    wc.setViewSize(WebcamResolution.VGA.getSize());
+                    wc.open();
+                    DebugFrame window = new DebugFrame();
+                }
             }
-            
         }
     }
-
 }

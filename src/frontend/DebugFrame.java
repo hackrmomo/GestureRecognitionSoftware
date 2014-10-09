@@ -20,7 +20,15 @@ public class DebugFrame extends JFrame {
         this.pack();
         this.setVisible(true);
     }
-    public void lol (){
+    
+    //public init(){
         
+    //}
+
+    @Override
+    public void setDefaultCloseOperation(int operation) {
+        
+        super.setDefaultCloseOperation(operation); //To change body of generated methods, choose Tools | Templates.
     }
+    
 }
