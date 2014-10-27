@@ -4,12 +4,12 @@
  * 
  */
 
-package backend;
+package midend;
 
 /**
  *
  * @author mohammadal-ahdal
  */
-public interface UnicodeDecoder {
+public class DebugGroup {
     
 }

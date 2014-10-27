@@ -2,17 +2,17 @@ package frontend;
 
 import java.util.Scanner;
 import com.github.sarxos.webcam.*;
-import java.awt.Dimension;
-import midend.Keyboard;
+
 
 public class GRS {
 
     static SettingsFrame sf;
-    static DebugFrame df;
+    static WebcamRGBFrame df;
     static Webcam wc = Webcam.getDefault();
-    static Keyboard kb = new Keyboard();
+    static String[] args;
 
     public static void main(String[] args) throws InterruptedException {
+        GRS.args = args;
         Scanner commandIntake = new Scanner(System.in);
         wc.open();
         wc.getImage();
@@ -26,7 +26,8 @@ public class GRS {
                     wc.close();
                     wc.setViewSize(WebcamResolution.VGA.getSize());
                     wc.open();
-                    DebugFrame window = new DebugFrame();
+                    WebcamRGBFrame window = new WebcamRGBFrame(wc);
+                    
                 }
             }
         }
