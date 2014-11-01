@@ -3,8 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend/WebcamRGBFrame.java</file>
-            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend/GRS.java</file>
+            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/SettingsFrame.java</file>
+            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/backend_models/GestureRecognition.java</file>
+            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/WebcamRGBFrame.java</file>
+            <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/GRS.java</file>
         </group>
     </open-files>
 </project-private>

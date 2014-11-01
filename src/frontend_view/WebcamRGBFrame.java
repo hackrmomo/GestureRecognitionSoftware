@@ -1,11 +1,8 @@
-package frontend;
+package frontend_view;
 
 import com.github.sarxos.webcam.Webcam;
 import com.github.sarxos.webcam.WebcamPanel;
-import java.awt.event.WindowListener;
 import java.awt.event.WindowEvent;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JFrame;
 
 public class WebcamRGBFrame extends JFrame {
@@ -28,20 +25,7 @@ public class WebcamRGBFrame extends JFrame {
         this.pack();
         this.setVisible(true);
         this.setTitle("Debug Frame *Will be Removed*");
-    }
-
-    public void setDefaultCloseOperation(int operation) {
-        super.setDefaultCloseOperation(operation);
-    }
-
-    @Override
-    public void removeAll() {
-        try {
-            GRS.main(GRS.args);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(WebcamRGBFrame.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        super.removeAll();
+        WindowEvent es = new WindowEvent(this, 0);
     }
 
 }

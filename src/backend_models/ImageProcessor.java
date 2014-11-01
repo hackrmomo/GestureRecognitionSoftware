@@ -1,17 +1,21 @@
-package midend;
+package backend_models;
 
 import java.awt.image.BufferedImage;
 import java.awt.Image;
 
 public class ImageProcessor {
+
     private final Image image;
-    public ImageProcessor(BufferedImage img){
+
+    public ImageProcessor(BufferedImage img) {
         this.image = img;
     }
-    public ImageProcessor(Image img){
+
+    public ImageProcessor(Image img) {
         this.image = img;
     }
-    public ImageProcessor(Image img, int frameNumber){
+
+    public ImageProcessor(Image img, int frameNumber) {
         this.image = img;
     }
 }
