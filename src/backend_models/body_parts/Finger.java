@@ -6,10 +6,18 @@
 
 package backend_models.body_parts;
 
-/**
- *
- * @author momo
- */
+class Base{
+    
+}
+class Knuckle{
+    
+}
+class DistalPhalange{
+    
+}
+class Tip{
+    
+}
 public class Finger {
     public Finger(){}
 }
