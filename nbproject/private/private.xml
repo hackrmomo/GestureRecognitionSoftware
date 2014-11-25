@@ -3,18 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-<<<<<<< Updated upstream
-            <file>file:/C:/Users/momo/Desktop/GestureRecognitionSoftware/src/backend_models/Point.java</file>
-            <file>file:/C:/Users/momo/Desktop/GestureRecognitionSoftware/src/backend_models/body_parts/Connection.java</file>
-            <file>file:/C:/Users/momo/Desktop/GestureRecognitionSoftware/src/frontend_view/GRS.java</file>
-            <file>file:/C:/Users/momo/Desktop/GestureRecognitionSoftware/src/backend_models/Angle.java</file>
-=======
             <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/SettingsFrame.java</file>
             <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/backend_models/GestureRecognition.java</file>
             <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/WebcamRGBFrame.java</file>
             <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/GRS.java</file>
             <file>file:/Users/mohammadal-ahdal/NetBeansProjects/GestureRecognitionSoftware/src/frontend_view/BackgroundPlatform.java</file>
->>>>>>> Stashed changes
         </group>
     </open-files>
 </project-private>
