@@ -132,6 +132,9 @@
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
                         </Property>
+                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                          <Dimension value="[729, 462]"/>
+                        </Property>
                         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[729, 462]"/>
                         </Property>
@@ -139,7 +142,7 @@
                       <AuxValues>
                         <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.github.sarxos.webcam.WebcamPanel(wc)"/>
                         <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="jPanel2.setFPSDisplayed(true);&#xa;jPanel2.setDisplayDebugInfo(true);&#xa;jPanel2.setImageSizeDisplayed(true);&#xa;jPanel2.setMirrored(true);&#xa;jPanel2.setSize(1920, 1080);&#xa;"/>
-                        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="com.github.sarxos.webcam.Webcam wc = com.github.sarxos.webcam.Webcam.getDefault();&#xa;wc.open();"/>
+                        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="com.github.sarxos.webcam.Webcam wc = com.github.sarxos.webcam.Webcam.getDefault(); &#xa;wc.close();&#xa;wc.setViewSize(new Dimension(640,480)); &#xa;wc.open(); "/>
                         <AuxValue name="JavaCodeGenerator_DeclarationPost" type="java.lang.String" value="*/ private com.github.sarxos.webcam.WebcamPanel jPanel2;"/>
                         <AuxValue name="JavaCodeGenerator_DeclarationPre" type="java.lang.String" value="/*"/>
                       </AuxValues>

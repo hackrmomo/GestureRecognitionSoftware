@@ -6,6 +6,7 @@
 
 package frontend_view;
 
+import java.awt.Dimension;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UIManager;
@@ -80,6 +81,8 @@ public class DebugWindow extends javax.swing.JFrame {
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         com.github.sarxos.webcam.Webcam wc = com.github.sarxos.webcam.Webcam.getDefault();
+        wc.close();
+        wc.setViewSize(new Dimension(640,480));
         wc.open();
         jPanel2 = new com.github.sarxos.webcam.WebcamPanel(wc);
         jPanel2.setFPSDisplayed(true);
@@ -202,6 +205,7 @@ public class DebugWindow extends javax.swing.JFrame {
         jTabbedPane1.addTab("Overview", jPanel1);
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setMaximumSize(new java.awt.Dimension(729, 462));
         jPanel2.setSize(new java.awt.Dimension(729, 462));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
