@@ -17,6 +17,7 @@ public class WebcamRGBFrame extends JFrame {
         panel.setDisplayDebugInfo(true);
         panel.setImageSizeDisplayed(true);
         panel.setMirrored(true);
+        
         this.setBounds(50, 70, 800, 800);
         this.setEnabled(true);
         this.add(panel);
