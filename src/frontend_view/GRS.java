@@ -12,14 +12,9 @@ public class GRS {
             dw.reInit();
             System.out.print("SWAG");
             //BackgroundPlatform.initialize();
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(GRS.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(GRS.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(GRS.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
             Logger.getLogger(GRS.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
     }
 }

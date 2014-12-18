@@ -3,19 +3,20 @@ package backend_models;
 import java.awt.image.BufferedImage;
 import java.awt.Image;
 
-public class ImageProcessor {
-
+public class WebCamAnalyzer {
+    
     private final Image image;
 
-    public ImageProcessor(BufferedImage img) {
+    public WebCamAnalyzer(BufferedImage img) {
         this.image = img;
     }
 
-    public ImageProcessor(Image img) {
+    public WebCamAnalyzer(Image img) {
         this.image = img;
     }
 
-    public ImageProcessor(Image img, int frameNumber) {
+    public WebCamAnalyzer(Image img, int frameNumber) {
         this.image = img;
     }
+    
 }
