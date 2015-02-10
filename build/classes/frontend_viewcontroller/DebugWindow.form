@@ -17,6 +17,21 @@
         </DimensionLayout>
       </Layout>
     </Container>
+    <Container class="com.github.sarxos.webcam.WebcamViewer" name="webcamViewer1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
@@ -114,53 +129,15 @@
                   <Layout>
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jPanel2" max="32767" attributes="0"/>
-                              <EmptySpace min="0" pref="375" max="32767" attributes="0"/>
-                          </Group>
+                          <EmptySpace min="0" pref="1139" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="462" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
-                  <SubComponents>
-                    <Container class="javax.swing.JPanel" name="jPanel2">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
-                        </Property>
-                        <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[729, 462]"/>
-                        </Property>
-                        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-                          <Dimension value="[729, 462]"/>
-                        </Property>
-                      </Properties>
-                      <AuxValues>
-                        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new com.github.sarxos.webcam.WebcamPanel(wc)"/>
-                        <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="jPanel2.setFPSDisplayed(true);&#xa;jPanel2.setDisplayDebugInfo(true);&#xa;jPanel2.setImageSizeDisplayed(true);&#xa;jPanel2.setMirrored(true);&#xa;jPanel2.setSize(1920, 1080);&#xa;"/>
-                        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="com.github.sarxos.webcam.Webcam wc = com.github.sarxos.webcam.Webcam.getDefault(); &#xa;wc.close();&#xa;wc.setViewSize(new Dimension(640,480)); &#xa;wc.open(); "/>
-                        <AuxValue name="JavaCodeGenerator_DeclarationPost" type="java.lang.String" value="*/ private com.github.sarxos.webcam.WebcamPanel jPanel2;"/>
-                        <AuxValue name="JavaCodeGenerator_DeclarationPre" type="java.lang.String" value="/*"/>
-                      </AuxValues>
-
-                      <Layout>
-                        <DimensionLayout dim="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="764" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                        <DimensionLayout dim="1">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <EmptySpace min="0" pref="462" max="32767" attributes="0"/>
-                          </Group>
-                        </DimensionLayout>
-                      </Layout>
-                    </Container>
-                  </SubComponents>
                 </Container>
                 <Container class="javax.swing.JPanel" name="lolol">
                   <Constraints>

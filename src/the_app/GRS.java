@@ -1,5 +1,6 @@
-package frontend_view;
+package the_app;
 
+import frontend_viewcontroller.DebugWindow;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -7,6 +8,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 public class GRS {
 
     public static void main(String[] args) {
+        
         try {
             DebugWindow dw = new DebugWindow();
             dw.reInit();

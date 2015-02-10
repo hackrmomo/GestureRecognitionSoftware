@@ -4,7 +4,7 @@
  * 
  */
 
-package frontend_view;
+package frontend_viewcontroller;
 
 import java.awt.Dimension;
 import java.util.logging.Level;
@@ -20,11 +20,16 @@ public class DebugWindow extends javax.swing.JFrame {
 
     /**
      * Creates new form DebugWindow
+     * @throws java.lang.ClassNotFoundException
+     * @throws java.lang.InstantiationException
+     * @throws java.lang.IllegalAccessException
+     * @throws javax.swing.UnsupportedLookAndFeelException
      */
     public DebugWindow() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
         System.setProperty("com.apple.mrj.application.apple.menu.about.name", "WikiTeX");
         System.setProperty("apple.laf.useScreenMenuBar", "true");
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        
         initComponents();
     }
     
@@ -75,21 +80,12 @@ public class DebugWindow extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel6 = new javax.swing.JPanel();
+        webcamViewer1 = new com.github.sarxos.webcam.WebcamViewer();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         cameraProfileAndFramingTabbedPanel = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
-        com.github.sarxos.webcam.Webcam wc = com.github.sarxos.webcam.Webcam.getDefault();
-        wc.close();
-        wc.setViewSize(new Dimension(640,480));
-        wc.open();
-        jPanel2 = new com.github.sarxos.webcam.WebcamPanel(wc);
-        jPanel2.setFPSDisplayed(true);
-        jPanel2.setDisplayDebugInfo(true);
-        jPanel2.setImageSizeDisplayed(true);
-        jPanel2.setMirrored(true);
-        jPanel2.setSize(1920, 1080);
         lolol = new javax.swing.JPanel();
         skeletalRecognitionTabbedPanel = new javax.swing.JPanel();
         skeletalViewPanel = new javax.swing.JPanel();
@@ -189,6 +185,17 @@ public class DebugWindow extends javax.swing.JFrame {
             .addGap(0, 244, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout webcamViewer1Layout = new javax.swing.GroupLayout(webcamViewer1.getContentPane());
+        webcamViewer1.getContentPane().setLayout(webcamViewer1Layout);
+        webcamViewer1Layout.setHorizontalGroup(
+            webcamViewer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        webcamViewer1Layout.setVerticalGroup(
+            webcamViewer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -204,32 +211,15 @@ public class DebugWindow extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Overview", jPanel1);
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel2.setMaximumSize(new java.awt.Dimension(729, 462));
-        jPanel2.setSize(new java.awt.Dimension(729, 462));
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 764, Short.MAX_VALUE)
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 462, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 375, Short.MAX_VALUE))
+            .addGap(0, 1139, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 462, Short.MAX_VALUE)
         );
 
         jTabbedPane2.addTab("Camera Hue", jPanel4);
@@ -925,7 +915,9 @@ public class DebugWindow extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    // <editor-fold>
     public static void main(String args[]) {
+    // </editor-fold>
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -1032,9 +1024,6 @@ public class DebugWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JPanel jPanel1;
-    /*
-    private javax.swing.JPanel jPanel2;
-    */ private com.github.sarxos.webcam.WebcamPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JTabbedPane jTabbedPane1;
@@ -1064,5 +1053,6 @@ public class DebugWindow extends javax.swing.JFrame {
     private javax.swing.JLabel thumbTipPointData;
     private javax.swing.JLabel thumbTipPointLabel;
     private javax.swing.JLabel thumbTitleLabel;
+    private com.github.sarxos.webcam.WebcamViewer webcamViewer1;
     // End of variables declaration//GEN-END:variables
 }
