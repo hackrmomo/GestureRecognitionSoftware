@@ -6,6 +6,7 @@
 
 package frontend_viewcontroller;
 
+import com.github.sarxos.webcam.Webcam;
 import java.awt.Dimension;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -17,6 +18,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author mohammadal-ahdal
  */
 public class DebugWindow extends javax.swing.JFrame {
+    Webcam wc = Webcam.getDefault();
 
     /**
      * Creates new form DebugWindow
@@ -79,14 +81,15 @@ public class DebugWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel6 = new javax.swing.JPanel();
-        webcamViewer1 = new com.github.sarxos.webcam.WebcamViewer();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
+        jPanel3 = new boofcv.gui.feature.AssociationPanel(0);
         cameraProfileAndFramingTabbedPanel = new javax.swing.JPanel();
         jTabbedPane2 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
+        cameraHueWebCamPanel = new com.github.sarxos.webcam.WebcamPanel(backend_models.WebcamAnalyzer.globalCam);
         lolol = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         skeletalRecognitionTabbedPanel = new javax.swing.JPanel();
         skeletalViewPanel = new javax.swing.JPanel();
         profileConfigurationLabel = new javax.swing.JLabel();
@@ -174,65 +177,98 @@ public class DebugWindow extends javax.swing.JFrame {
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 120, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 244, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout webcamViewer1Layout = new javax.swing.GroupLayout(webcamViewer1.getContentPane());
-        webcamViewer1.getContentPane().setLayout(webcamViewer1Layout);
-        webcamViewer1Layout.setHorizontalGroup(
-            webcamViewer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        webcamViewer1Layout.setVerticalGroup(
-            webcamViewer1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1148, Short.MAX_VALUE)
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 496, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1160, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 508, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         jTabbedPane1.addTab("Overview", jPanel1);
+
+        cameraHueWebCamPanel.setBackground(new java.awt.Color(51, 0, 51));
+
+        javax.swing.GroupLayout cameraHueWebCamPanelLayout = new javax.swing.GroupLayout(cameraHueWebCamPanel);
+        cameraHueWebCamPanel.setLayout(cameraHueWebCamPanelLayout);
+        cameraHueWebCamPanelLayout.setHorizontalGroup(
+            cameraHueWebCamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 697, Short.MAX_VALUE)
+        );
+        cameraHueWebCamPanelLayout.setVerticalGroup(
+            cameraHueWebCamPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 462, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1139, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addComponent(cameraHueWebCamPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(442, 442, 442))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 462, Short.MAX_VALUE)
+            .addComponent(cameraHueWebCamPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
+        //wc.close();
+        //wc.setViewSize(new Dimension(640,480));
+        //wc.open();
+
         jTabbedPane2.addTab("Camera Hue", jPanel4);
+
+        jPanel2.setBackground(new java.awt.Color(98, 177, 201));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 450, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 325, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout lololLayout = new javax.swing.GroupLayout(lolol);
         lolol.setLayout(lololLayout);
         lololLayout.setHorizontalGroup(
             lololLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1139, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, lololLayout.createSequentialGroup()
+                .addContainerGap(441, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(248, 248, 248))
         );
         lololLayout.setVerticalGroup(
             lololLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 462, Short.MAX_VALUE)
+            .addGroup(lololLayout.createSequentialGroup()
+                .addGap(79, 79, 79)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(58, Short.MAX_VALUE))
         );
 
         jTabbedPane2.addTab("Camera Tint (B/W)", lolol);
@@ -960,6 +996,9 @@ public class DebugWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    /*
+    private javax.swing.JPanel cameraHueWebCamPanel;
+    */ private com.github.sarxos.webcam.WebcamPanel cameraHueWebCamPanel;
     private javax.swing.JPanel cameraProfileAndFramingTabbedPanel;
     private javax.swing.JPanel fingerInfoContainer;
     private javax.swing.JPanel indexFingerContainer;
@@ -1024,8 +1063,11 @@ public class DebugWindow extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    /*
+    private javax.swing.JPanel jPanel3;
+    */private boofcv.gui.feature.AssociationPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JPanel lolol;
@@ -1053,6 +1095,5 @@ public class DebugWindow extends javax.swing.JFrame {
     private javax.swing.JLabel thumbTipPointData;
     private javax.swing.JLabel thumbTipPointLabel;
     private javax.swing.JLabel thumbTitleLabel;
-    private com.github.sarxos.webcam.WebcamViewer webcamViewer1;
     // End of variables declaration//GEN-END:variables
 }

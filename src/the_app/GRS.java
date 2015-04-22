@@ -12,8 +12,8 @@ public class GRS {
         try {
             DebugWindow dw = new DebugWindow();
             dw.reInit();
-            System.out.print("SWAG");
-            //BackgroundPlatform.initialize();
+            System.out.print("Program Executed");
+            
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
             Logger.getLogger(GRS.class.getName()).log(Level.SEVERE, null, ex);
         }
